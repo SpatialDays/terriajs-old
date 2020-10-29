@@ -1,6 +1,6 @@
 {
-  "name": "@davidedelerma/terriajs",
-  "version": "7.11.11",
+  "name": "@juanezm/terriajs",
+  "version": "7.12.00",
   "description": "Geospatial data visualization platform.",
   "license": "Apache-2.0",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/TerriaJS/terriajs.git"
+    "url": "git+ssh://git@github.com/SatelliteApplicationsCatapult/terriajs.git"
   },
   "config": {
     "docRepo": "git@github.com:TerriaJS/Documentation.git"

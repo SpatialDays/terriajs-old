@@ -118,6 +118,13 @@ const PrintView = createReactClass({
       <div>
         <p>
           <img
+            className="logo-image"
+            src="https://www.commonsensing.org.uk/sites/default/themes/lightweight/images/logos/logo.svg"
+            alt="IPP CommonSensing"
+          />
+        </p>
+        <p>
+          <img
             className="map-image"
             src={this.state.mapImageDataUrl}
             alt="Map snapshot"
@@ -224,7 +231,7 @@ PrintView.Styles = `
 
     .layer-legends {
         display: inline;
-        float: left;
+        font-size: 14px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -233,12 +240,65 @@ PrintView.Styles = `
         font-weight: bold;
     }
 
-    h1, h2, h3 {
-        clear: both;
+    h1 {
+      font-size: 24px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 26.4px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 15.4px;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 15.4px;
+    }
+
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    blockquote {
+      font-size: 21px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    pre {
+      font-size: 13px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 18.5667px;
     }
 
     .tjs-_form__input {
         width: 80%;
+    }
+
+    #print {
+      margin: 1.2cm;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    .logo-image {
+      max-width: 1.6cm;
     }
 `;
 
@@ -254,7 +314,7 @@ PrintView.Styles = `
  * @param {Function} [options.closeCallback] A function that is called when the print view is closed. The function is given
  *                   the print view window as its only parameter.
  */
-PrintView.create = function(options) {
+PrintView.create = function (options) {
   const {
     terria,
     viewState,

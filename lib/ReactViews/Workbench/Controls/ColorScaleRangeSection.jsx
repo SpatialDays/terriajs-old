@@ -7,6 +7,8 @@ import ObserveModelMixin from "../../ObserveModelMixin";
 import defined from "terriajs-cesium/Source/Core/defined";
 import { withTranslation } from "react-i18next";
 import Styles from "./colorscalerange-section.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 const ColorScaleRangeSection = createReactClass({
   displayName: "ColorScaleRangeSection",
@@ -99,7 +101,15 @@ const ColorScaleRangeSection = createReactClass({
     const { t } = this.props;
     return (
       <form className={Styles.colorscalerange} onSubmit={this.updateRange}>
-        <div className={Styles.title}>{t("workbench.colorScaleRange")} </div>
+        <div className={Styles.title}>
+          {t("workbench.colorScaleRange")}
+          <div className={Styles.tooltip}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+            <span className={Styles.tooltiptext}>
+              Grey pixels indicate data outside of the range
+            </span>
+          </div>
+        </div>
         <label htmlFor="rangeMax">{t("workbench.rangeMax")} </label>
         <input
           className={Styles.field}

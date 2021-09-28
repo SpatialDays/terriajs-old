@@ -178,8 +178,8 @@
     "latLon": "Lat / Lon "
   },
   "welcomeMessage": {
-    "title": "Spatial data made <2>easy.</2>",
-    "WelcomeMessage": "Access rich spatial data from multiple data sources, all from one convenient location.",
+    "title": "CommonSensing <2>Solomon Islands.</2>",
+    "WelcomeMessage": "An easy way to explore and analyse data, helping to build climate resilience.",
     "WelcomeMessagePrimaryBtn": "Explore Data",
     "WelcomeMessageSecondaryBtn": "Take a tour",
     "WelcomeMessageDissmissText": "Don't show me this again"
